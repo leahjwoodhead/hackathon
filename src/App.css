@@ -14,13 +14,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  font-family:'Courier New', Courier, monospace;
   color: white;
 }
 
@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+  button {
+  -webkit-appearance: button;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  border: 1px solid white;
+  background-color: transparent;
+  height: 50px;
+  width: 200px;
+  margin-right:10px;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1px 7px 2px;
+}
+
+.Button-Group {
+  display:flex;
+}
+
+.Logo-container {
+
+}
+
+
+
