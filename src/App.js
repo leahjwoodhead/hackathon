@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter history={history}>
       <div className="App">   </div>
         <Routes />
-   
+  
     </BrowserRouter>
   );
 }
