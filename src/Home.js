@@ -14,8 +14,7 @@ function Home() {
             <form>
             <button onClick={() => history.push('/Dashboard')}>DISCOVER</button>
             </form>
-            <div>
-            <button  onClick={() => history.push('/About')}>ABOUT</button> </div> </div>
+            <button  onClick={() => history.push('/About')}>ABOUT</button> </div>
             </header>
              </div>
               );
