@@ -5,19 +5,19 @@ import history from "./history"
 
 function Home() {
     return (
-    <div className="App">
-        <header className="App-header">
-            <div className="Logo-container">
-            <img src={logo} alt="Logo" /></div>
-            <h1>1 DAY = 1 STORY</h1>
-            <div className="Button-Group">
-            <form>
-            <button onClick={() => history.push('/Dashboard')}>DISCOVER</button>
-            </form>
-            <button  onClick={() => history.push('/About')}>ABOUT</button> </div>
+        <div className="App">
+            <header className="App-header">
+                <div className="Logo-container">
+                    <img src={logo} alt="Logo" /></div>
+                <h1>1 DAY = 1 STORY</h1>
+                <div className="Button-Group">
+                    <form>
+                        <button onClick={() => history.push('/Dashboard')}>DISCOVER</button>
+                    </form>
+                    <button onClick={() => history.push('/About')}>ABOUT</button> </div>
             </header>
-             </div>
-              );
-  }
+        </div>
+    );
+}
 
 export default Home;

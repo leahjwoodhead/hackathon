@@ -6,10 +6,10 @@ import history from './history';
 function App() {
   return (
     <BrowserRouter history={history}>
-    <div className="App">
-      <Routes />    
-      </div>
-      </BrowserRouter>
+      <div className="App">   </div>
+        <Routes />
+   
+    </BrowserRouter>
   );
 }
 
