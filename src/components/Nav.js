@@ -6,7 +6,7 @@ const NavBar = styled.nav`
     margin: 0 auto;
     width: 10%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     grid-area: nav;
     padding-top: 20px;
 
