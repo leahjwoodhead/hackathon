@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Nav from './Nav';
 import styled from 'styled-components'
 import DashboardSideBar from './DashboardSideBar';
-import { stories, podcasts, books, music } from '../data/data'
+import { data } from '../data/data'
 
 const MainDiv = styled.div`
   border: 1px solid white;
@@ -14,19 +14,21 @@ const MainDiv = styled.div`
 class Dashboard extends Component {
 
   state = {
-    topicData: []
+    topic: ""
   }
 
   componentDidMount() {
     const topic = this.props.match.params.topic
     if (topic === "Story") {
-      this.setState({topicData: stories})
+      this.setState({topic: "story"})
     } else if (topic === "Podcast") {
-      this.setState({topicData: podcasts})
+      this.setState({topic: "podcast"})
     } else if (topic === "Book") {
-      this.setState({topicData: books})
+      this.setState({topic: "book"})
     } else if (topic === "Music") {
-      this.setState({topicData: music})
+      this.setState({topic: "music"})
+    } else if (topic === "Event") {
+      this.setState({topic: "event"})
     }
   }
 
