@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&display=swap');
+
+.AboutPage{
+background: url("../../aboutpic.png") no-repeat;   
+background-repeat:inherit;
+background-attachment: fixed;
+background-position: center; 
+background-size:cover;
+position: fixed;    
+top: 0;   
+left: 0;    
+right: 0;   
+bottom: 0;   
+min-width: 100%;  
+min-height: 100%; 
+}
+
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: orange;}
+    100% {background-color: greenyellow;}
+  }
+
+h2 {
+    display: flex;
+    justify-content: left;
+    margin-left: 50px;
+    padding-left: 170px;
+    padding-top: 0;
+    font-family: 'Permanent Marker';
+    font-size: 85px;
+    background-color: yellow;
+    animation-name: example;
+    animation-duration: 7s;
+    width: 850px;
+    height: 140px;
+}
+
+p {
+    background-color: orange;
+    padding: 16px;
+    font-size: 22.5px;
+    margin-left: 50px;
+    width: 720px;
+    font-family: "Montserrat";
+    text-align:justify;
+    box-shadow: 10px 10px red;
+}
