@@ -36,6 +36,9 @@ class DashboardSideBar extends Component {
                     <Link to="/Dashboard/Story" style={linkStyle}>Story</Link>
                 </ListItem>
                 <ListItem>
+                    <Link to="/Dashboard/Event" style={linkStyle}>Event</Link>
+                </ListItem>
+                <ListItem>
                     <Link to="/Dashboard/Podcast" style={linkStyle}>Podcast</Link>
                 </ListItem>
                 <ListItem>
