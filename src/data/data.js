@@ -56,5 +56,33 @@ export const data = [
                 "year": 1900
         }
     },
+    {
+        "story":  { 
+                "text": "Ort hin finde all drein euern klare. Hei warmen mag tal stille fellen. Uberging ri hausfrau du geholfen du allerlei. An dienstmagd launischen wohnzimmer bangigkeit mi. Uns ihm hemdarmel bedeckten geblendet kellnerin gut spurenden mannsbild. Te alle gewi gott lieb lief eins se. Dunner das see wie bliebe soviel. Trauen gefiel weiler war ebenso erfuhr her geduld neu. Indem im orten jahre dabei schon im ja hoher.",
+                "author": "Myles"
+            },
+        "event": {
+                "title": "Leeds LGBT+ Coffee & Cake Cafe",
+                "location": "Mill Hill Chapel, City Square Leeds",
+                "time": "Sat Nov 27th at 12:00am-04:00.",
+                "description": "Join us on the evening for our accessible LGBT+ affirmative family friendly event to meet others, play board games, enjoy cake and refreshments or just for a friendly chatter with attendees. The event is staffed by Angels of Freedom volunteers, and funded by the incredible Brown & Blond bakery https://brownandblond.co.uk/",
+                "link": "https://www.evensi.uk/leeds-lgbt-coffee-cake-cafe-mill-hill-chapel/421694457"
+        },
+        "podcast": {
+                "title": "Making Gay History",
+                "host": "Eric Marcus",
+                "description": "Emotional glimpses into the lives of unsung, if not entirely sidelined, trailblazers who made their mark on the LGBTQ civil rights movement—people like Vito Russo, Jean O'Leary, Bayard Rustin, and Del Martin. Marcus, author of a 2002 book also titled Making Gay History, pulls from his own recorded archives and conducts original interviews to collage together episodes on heroes who deserve robust chapters in the history books."
+        },
+        "book": {
+                "title": "Fairest",
+                "author": "Meredith Talusan",
+                "description": "Fairest is a memoir about a precocious boy with albinism, a “sun child” from a rural Philippine village, who would grow up to become a woman in America. Throughout her journey, Talusan shares poignant and powerful episodes of desirability and love that will remind readers of works such as Call Me By Your Name and Giovanni’s Room. Her evocative reflections will shift our own perceptions of love, identity, gender, and the fairness of life."
+        },
+        "music": {
+                "title": "Born This Way",
+                "artist": "Lady Gaga",
+                "year": 2011
+        }
+    },
 ];
 
