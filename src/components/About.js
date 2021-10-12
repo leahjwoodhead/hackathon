@@ -4,7 +4,7 @@ import Nav from './Nav';
 class About extends Component {
     render() {
         return (
-            <div>
+            <div className="AboutPage">
                 <Nav/>
                 <div className="About" style={{ display: 'flex', justifyContent: 'center', padding: 30, color: 'white' }}>
                     <div>
@@ -12,9 +12,8 @@ class About extends Component {
                     </div>
                 </div>
             </div>
-    
         );
-    }
+    }    
 }
 
 export default About;

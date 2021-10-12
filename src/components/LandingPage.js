@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import "../App.css";
+import React, { Component, Link } from "react";
 import logo from '../logo.png';
 import history from "../history"
+import './LandingPage.css'
 
 function LandingPage() {
     return (
+        <body>
         <div className="App">
             <header className="App-header">
-
                 <div className="Logo-container">
                     <img src={logo} alt="Logo" />
                 </div>
@@ -24,7 +24,9 @@ function LandingPage() {
                 </div>
             </header>
         </div>
+        </body>
     );
 }
+
 
 export default LandingPage;
