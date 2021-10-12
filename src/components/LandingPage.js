@@ -1,7 +1,7 @@
 import React, { Component, Link } from "react";
 import logo from '../logo.png';
 import history from "../history"
-// import './LandingPage.css'
+import './LandingPage.css'
 
 function LandingPage() {
     return (
