@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import DashboardSideBar from './DashboardSideBar';
 import { data } from '../data/data'
 import './styles/Dashboard.css'
-import Info from './Infomation';
+import Info from './Information';
 import LeftIcon from '../images/icons/left.png'
 import RightIcon from '../images/icons/right.png'
 
