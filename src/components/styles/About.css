@@ -24,9 +24,9 @@ min-height: 100%;
 
 h2 {
     display: flex;
-    justify-content: left;
-    margin-left: 50px;
-    padding-left: 170px;
+    text-align: left;
+    margin-left: 75px;
+    padding-left:16px;
     padding-top: 0;
     font-family: 'Permanent Marker';
     font-size: 85px;
@@ -42,10 +42,11 @@ p {
     background-color: #E7E736;
     padding: 16px;
     font-size: 17px;
-    margin-left: 50px;
+    margin-left: 75px;
     margin-top:30px;
-    width: 720px;
+    width: 620px;
     font-family: "Montserrat";
     text-align:justify;
     box-shadow: 10px 10px#E74A36;
 }
+

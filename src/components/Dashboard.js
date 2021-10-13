@@ -3,12 +3,13 @@ import Nav from './Nav';
 import styled from 'styled-components'
 import DashboardSideBar from './DashboardSideBar';
 import { data } from '../data/data'
+import './styles/Dashboard.css'
 
 const MainDiv = styled.div`
   border: 1px solid white;
   margin: 80px auto;
   width: 50%;
-  height: auto;
+  height: 200px;
 `
 
 class Dashboard extends Component {
@@ -34,13 +35,13 @@ class Dashboard extends Component {
 
   render(){
     return (
-      <div>
+      <div className="MainDashboard">
         <Nav/>
         {console.log(this.props.match.params.topic, this.state.topicData)}
         <DashboardSideBar/>
           <MainDiv> 
               <div style={{ display: 'flex', justifyContent: 'center', padding: 30, color: 'white' }}>
-                <div><h2>Dashboard </h2></div>
+              
             </div>
           </MainDiv>
       </div>
