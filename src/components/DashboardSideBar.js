@@ -27,7 +27,6 @@ const ListItem = styled.li`
 
 const linkStyle = {
     "text-decoration": "none"
-    // "border":"1px solid black"
 }
 
 
@@ -42,7 +41,7 @@ class DashboardSideBar extends Component {
                     <Link to="/Dashboard/Story" style={linkStyle}><img src={StoryIcon} alt="StoryIcon" height={75}/></Link>
                 </ListItem>
                 <ListItem>
-                    <Link to="/Dashboard/Event" style={linkStyle}><img className="Icon" src={EventIcon} alt="EventIcon" height={75}/></Link>
+                    <Link to="/Dashboard/Event" style={linkStyle}><img src={EventIcon} alt="EventIcon" height={75}/></Link>
                 </ListItem>
                 <ListItem>
                     <Link to="/Dashboard/Podcast" style={linkStyle}><img src={PodcastIcon} alt="PodcastIcon" height={75}/></Link>

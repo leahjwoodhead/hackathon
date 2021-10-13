@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 const InfoDiv = styled.div`
     margin: 0px auto;
-    justify-content: center;
     padding: 30;
     color: white;
     padding-bottom: 10px;
@@ -14,7 +13,7 @@ class Info extends React.Component {
     render() { 
         return <div>
             <InfoDiv>
-                <h2>{this.props.topic}</h2>
+                <h5>{this.props.topic}</h5>
                 <p>{this.props.data.title ? this.props.data.title : null}</p>
                 <p>{this.props.data.text ? this.props.data.text : null}</p>
                 <p>{this.props.data.author ? this.props.data.author : null}</p>

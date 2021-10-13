@@ -5,13 +5,13 @@ import DashboardSideBar from './DashboardSideBar';
 import { data } from '../data/data'
 import './styles/Dashboard.css'
 import Info from './Infomation';
+import LeftIcon from '../images/icons/left.png'
+import RightIcon from '../images/icons/right.png'
 
 const MainDiv = styled.div`
   margin: 30px auto;
   width: 50%;
-  height: 200px;
 `
-
 const PageButtonLeft = styled.button`
   color: white;
   font-size: 10px;
@@ -26,10 +26,10 @@ const PageButtonRight = styled.button`
 const ButtonDiv = styled.div`
   display: flex;
   margin: 0 auto;
-  width: 50%;
+  margin-top: 20px;
+  width: 40%;
   justify-content: space-between;
-  padding: 0px;
-`
+  padding: 0px;`
 
 class Dashboard extends Component {
 
@@ -92,10 +92,10 @@ class Dashboard extends Component {
       <div className="MainDashboard">
         <Nav/>
         <DashboardSideBar/>
-              <ButtonDiv>
-                  {(p > 0) ? <PageButtonRight id="yesterday" onClick={(event) => this.handleClick(event)}>yesterday</PageButtonRight> : <p></p>}
-                  {(p < pages) ? <PageButtonLeft id="next day" onClick={(event) => this.handleClick(event)}>next day</PageButtonLeft> : <p></p>}
-              </ButtonDiv>
+        <ButtonDiv>
+                  {(p > 0) ? <img src={LeftIcon} alt="LeftIcon" height={75} id="yesterday" onClick={(event) => this.handleClick(event)}></img> : <p></p>}
+                  {(p < pages) ? <img src={RightIcon} alt="RightIcon" height={75} id="next day" onClick={(event) => this.handleClick(event)}></img> : <p></p>}
+                  </ButtonDiv>
           <MainDiv> 
                 <Info data={this.state.data} topic={this.state.topic}/>
           </MainDiv>
