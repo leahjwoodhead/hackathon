@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import DashboardSideBar from './DashboardSideBar';
 import { data } from '../data/data'
 import './styles/Dashboard.css'
-import Info from './Infomation';
+import Info from './Information';
 
 const MainDiv = styled.div`
   margin: 30px auto;
