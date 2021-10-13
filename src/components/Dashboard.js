@@ -67,6 +67,9 @@ class Dashboard extends Component {
     const topic = this.props.match.params.topic
     const pages = data.length - 1
     const p = data.length - 1
+
+    data[0].comments.push({"comment": "hello", "date": "12th", "user": "Leah"})
+
     if (topic === "Story") {
       this.setState({topic: "Story", data: data[pages].Story, pages, p})
     } else if (topic === "Podcast") {
