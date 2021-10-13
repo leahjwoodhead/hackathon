@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import history from "../history"
 import styled from 'styled-components'
+import logo from '../logo.png'
+import '../components/styles/LandingPage.css'
 
 const NavBar = styled.nav`
     margin: 0 auto;
-    width: 10%;
+    width: 22%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     grid-area: nav;
     padding-top: 20px;
 
@@ -33,6 +35,7 @@ class Nav extends Component {
         return (
             <div>
                 <NavBar>
+                <img className="Logo-container" src={logo} alt="Logo" height={75}/>
                         <NavButton key="Story" onClick={() => history.push('/Dashboard/Story')}>DISCOVER</NavButton>
                         <NavButton onClick={() => history.push('/About')}>ABOUT</NavButton>
                 </NavBar>

@@ -3,6 +3,7 @@ import Nav from './Nav';
 import styled from 'styled-components'
 import DashboardSideBar from './DashboardSideBar';
 import { data } from '../data/data'
+import './styles/Dashboard.css'
 import Info from './Infomation';
 
 const MainDiv = styled.div`
@@ -10,7 +11,7 @@ const MainDiv = styled.div`
   border-radius: 10px;
   margin: 30px auto;
   width: 50%;
-  height: auto;
+  height: 200px;
 `
 
 const PageButtonLeft = styled.button`
@@ -90,7 +91,7 @@ class Dashboard extends Component {
   render(){
     const {pages, p} = this.state
     return (
-      <div>
+      <div className="MainDashboard">
         <Nav/>
         <DashboardSideBar/>
               <ButtonDiv>
@@ -98,6 +99,9 @@ class Dashboard extends Component {
                   {(p < pages) ? <PageButtonLeft id="next day" onClick={(event) => this.handleClick(event)}>next day</PageButtonLeft> : <p></p>}
               </ButtonDiv>
           <MainDiv> 
+              <div style={{ display: 'flex', justifyContent: 'center', padding: 30, color: 'white' }}>
+              
+            </div>
                 <Info data={this.state.data} topic={this.state.topic}/>
           </MainDiv>
       </div>

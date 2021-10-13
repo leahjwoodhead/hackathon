@@ -1,0 +1,14 @@
+.MainDashboard {
+background: url("../../dashboard.png") no-repeat;   
+background-repeat:inherit;
+background-attachment: fixed;
+background-position: center; 
+background-size:cover;
+position: fixed;    
+top: 0;   
+left: 0;    
+right: 0;   
+bottom: 0;   
+min-width: 100%;  
+min-height: 100%; 
+}
