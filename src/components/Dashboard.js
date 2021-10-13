@@ -10,19 +10,10 @@ import RightIcon from '../images/icons/right.png'
 
 const MainDiv = styled.div`
   margin: 30px auto;
-  width: 50%;
+  width: 30%;
+}
 `
-const PageButtonLeft = styled.button`
-  color: white;
-  font-size: 10px;
-  border: none;
-`
-const PageButtonRight = styled.button`
-  color: white;
-  font-size: 10px;
-  border: none;
-  padding: 0px;
-`
+
 const ButtonDiv = styled.div`
   display: flex;
   margin: 0 auto;

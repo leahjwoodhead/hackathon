@@ -1,12 +1,17 @@
 import React, { Component }  from "react";
 import styled from 'styled-components'
+import './styles/Information.css'
 
 const InfoDiv = styled.div`
     margin: 0px auto;
-    padding: 30;
     color: white;
     padding-bottom: 10px;
-    
+    background-color:  grey;
+    margin-top:20px;
+    width: 531px;
+    height: 440px; 
+    border-radius: 25px;
+    border: 5px solid black;
 `
 
 class Info extends React.Component {

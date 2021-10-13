@@ -9,13 +9,11 @@ import MusicIcon from '../images/icons/music.png'
 
 const MainDiv = styled.div`
   width: 10%;
-  height: 200px;
-  margin-left: 250px;
+  margin-left: 320px;
   position: absolute;
-  margin-top: 70px;
+  margin-top: 100px;
 `
 const List = styled.ul`
-    color: white;
     list-style-type: none;
     display: flex;
     flex-direction: column;

@@ -22,7 +22,7 @@ min-height: 100%;
     100% {background-color: greenyellow;}
   }
 
-h2 {
+h7 {
     display: flex;
     text-align: left;
     margin-left: 75px;
@@ -49,4 +49,3 @@ h3, h4 {
     text-align:justify;
     box-shadow: 10px 10px#E74A36;
 }
-

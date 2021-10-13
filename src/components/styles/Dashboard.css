@@ -14,10 +14,10 @@ min-height: 100%;
 }
 
 h5 {
+border-bottom: 5px solid black;
+border-radius: 25px;
 display: block;
 margin-left: auto;
-margin-right: auto;
-padding-left:16px;
 padding-right: 16px;
 font-family: 'Permanent Marker';
 font-size: 60px;
