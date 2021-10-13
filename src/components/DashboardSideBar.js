@@ -9,9 +9,9 @@ import MusicIcon from '../images/icons/music.png'
 
 const MainDiv = styled.div`
   width: 10%;
-  margin-left: 380px;
+  margin-left: 350px;
   position: absolute;
-  margin-top: 100px;
+  margin-top: 80px;
 `
 const List = styled.ul`
     list-style-type: none;

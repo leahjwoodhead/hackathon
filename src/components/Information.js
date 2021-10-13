@@ -9,10 +9,13 @@ const InfoDiv = styled.div`
     background-color:  grey;
     margin-top:20px;
     width: 531px;
-    height: 440px; 
+    height: 420px; 
     border-radius: 25px;
-    border: 5px solid black;
-    box-shadow: 10px 10px yellow;
+    box-shadow: 5px 5px#E74A36;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    margin-top:110px;
 `
 
 class Info extends React.Component {

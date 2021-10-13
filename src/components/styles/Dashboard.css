@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&display=swap');
+
 .MainDashboard {
 background: url("../../images/dashboard.png") no-repeat;   
 background-repeat:inherit;
@@ -28,4 +30,11 @@ animation-duration: 7s;
 animation-iteration-count: infinite;
 width: 500px;
 height: 90px;
+}
+
+p{
+font-family: "Montserrat"; 
+text-align:justify;
+color: black;
+font-weight: bold;
 }
