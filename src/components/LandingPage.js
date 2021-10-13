@@ -1,5 +1,5 @@
 import React, { Component, Link } from "react";
-import logo from '../logo.png';
+import logo from '../images/logo.png';
 import history from "../history"
 import './styles/LandingPage.css'
 

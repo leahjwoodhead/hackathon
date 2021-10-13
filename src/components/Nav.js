@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import history from "../history"
 import styled from 'styled-components'
-import logo from '../logo.png'
+import logo from '../images/logo.png'
 import '../components/styles/LandingPage.css'
 
 const NavBar = styled.nav`

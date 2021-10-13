@@ -99,9 +99,6 @@ class Dashboard extends Component {
                   {(p < pages) ? <PageButtonLeft id="next day" onClick={(event) => this.handleClick(event)}>next day</PageButtonLeft> : <p></p>}
               </ButtonDiv>
           <MainDiv> 
-              <div style={{ display: 'flex', justifyContent: 'center', padding: 30, color: 'white' }}>
-              
-            </div>
                 <Info data={this.state.data} topic={this.state.topic}/>
           </MainDiv>
       </div>
