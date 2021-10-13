@@ -7,8 +7,6 @@ import './styles/Dashboard.css'
 import Info from './Infomation';
 
 const MainDiv = styled.div`
-  border: 1px solid white;
-  border-radius: 10px;
   margin: 30px auto;
   width: 50%;
   height: 200px;
