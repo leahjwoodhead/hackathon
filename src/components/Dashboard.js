@@ -11,8 +11,7 @@ import RightIcon from '../images/icons/right.png'
 const MainDiv = styled.div`
   margin: 30px auto;
   width: 30%;
-}
-`
+}`
 
 const ButtonDiv = styled.div`
   display: flex;
