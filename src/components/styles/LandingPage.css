@@ -10,22 +10,17 @@
     background-attachment: fixed;
     background-position: center; 
     background-size:cover;
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-    text-align: center;
-    height: 100%
+    position: fixed;    
+    top: 0;   
+    left: 0;    
+    right: 0;   
+    bottom: 0;   
+    min-width: 100%;  
+    min-height: 100%; 
 }
 
-/* .App {
-  background-image: url("../../landing_page.png");
-  background-repeat:inherit;
-  background-attachment: fixed;
-  background-position: center; 
-  background-size:cover;
-  height:max-content
-} */
-
   @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
+    .Logo-container {
       animation: App-logo-spin infinite 20s linear;
     }
   }
