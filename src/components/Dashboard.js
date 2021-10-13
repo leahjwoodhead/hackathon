@@ -26,9 +26,12 @@ const PageButtonRight = styled.button`
 const ButtonDiv = styled.div`
   display: flex;
   margin: 0 auto;
-  width: 50%;
+  width: 35%;
   justify-content: space-between;
   padding: 0px;
+  position: absolute;
+  margin-left: 550px;
+  padding-top: 20px;
 `
 
 class Dashboard extends Component {
@@ -86,6 +89,16 @@ class Dashboard extends Component {
     })
   }
 
+
+  getDate(daysToSubtract){
+    let today = new Date();
+    const dd = String(today.getDate() - daysToSubtract).padStart(2, '0');
+    const mm = String(today.getMonth()).padStart(2, '0'); //January is 0!
+
+    today = dd + "/" + mm;
+    return today
+  }
+
   render(){
     const {pages, p} = this.state
     return (
@@ -93,8 +106,8 @@ class Dashboard extends Component {
         <Nav/>
         <DashboardSideBar/>
               <ButtonDiv>
-                  {(p > 0) ? <PageButtonRight id="yesterday" onClick={(event) => this.handleClick(event)}>yesterday</PageButtonRight> : <p></p>}
-                  {(p < pages) ? <PageButtonLeft id="next day" onClick={(event) => this.handleClick(event)}>next day</PageButtonLeft> : <p></p>}
+                  {(p > 0) ? <PageButtonRight id="yesterday" onClick={(event) => this.handleClick(event)}>{this.getDate(pages - p)}</PageButtonRight> : <p></p>}
+                  {(p < pages) ? <PageButtonLeft id="next day" onClick={(event) => this.handleClick(event)}>{this.getDate(pages - (p + 2))}</PageButtonLeft> : <p></p>}
               </ButtonDiv>
           <MainDiv> 
                 <Info data={this.state.data} topic={this.state.topic}/>
