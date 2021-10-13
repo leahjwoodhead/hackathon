@@ -4,7 +4,7 @@ import './styles/Comments.css'
 
 const InfoDiv = styled.div`
     border: 1px solid white;
-    border-radius: 10px;
+
     width: 500px;
     color: white;
     font-size: 10px;

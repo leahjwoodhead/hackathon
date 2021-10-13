@@ -43,13 +43,21 @@ const CommentsDiv = styled.div`
 
 const InfoDiv = styled.div`
     border: 1px solid white;
-    border-radius: 10px;
     width: 500px;
     color: white;
     font-size: 10px;
     margin: 0 auto;
-    height: 50px;
+    height: 40px;
+    margin-top: 10px;
+`
 
+const Form = styled.form`
+  display: flex;
+  padding: 5px;
+`
+
+const InputComment = styled.input`
+  width: 90%;
 `
 
 class Dashboard extends Component {
@@ -136,11 +144,10 @@ class Dashboard extends Component {
               return <Comments comment={comment}/>
             }) : <p>This article does not have any comments</p>}
               <InfoDiv>
-                <form>
-                  <label>Add Comment:</label>
-                  <input type="text"></input>
+                <Form>
+                  <InputComment  type="text"placeholder="Add Comment..."></InputComment >
                   <input type="submit"></input>
-                </form>
+                </Form>
               </InfoDiv>
           </CommentsDiv>
       </div>
