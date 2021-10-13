@@ -12,6 +12,7 @@ const InfoDiv = styled.div`
     height: 440px; 
     border-radius: 25px;
     border: 5px solid black;
+    box-shadow: 10px 10px yellow;
 `
 
 class Info extends React.Component {
