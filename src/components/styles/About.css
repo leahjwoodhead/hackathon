@@ -38,7 +38,7 @@ h2 {
     height: 140px;
 }
 
-p {
+h3, h4 {
     background-color: #E7E736;
     padding: 16px;
     font-size: 14px;
