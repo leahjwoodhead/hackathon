@@ -4,22 +4,35 @@ import styled from 'styled-components'
 import DashboardSideBar from './DashboardSideBar';
 import { data } from '../data/data'
 import './styles/Dashboard.css'
-import Info from './Information';
-import LeftIcon from '../images/icons/left.png'
-import RightIcon from '../images/icons/right.png'
+import Info from './Infomation';
 
 const MainDiv = styled.div`
   margin: 30px auto;
-  width: 30%;
-}`
+  width: 50%;
+  height: 200px;
+`
 
+const PageButtonLeft = styled.button`
+  color: white;
+  font-size: 10px;
+  border: none;
+`
+const PageButtonRight = styled.button`
+  color: white;
+  font-size: 10px;
+  border: none;
+  padding: 0px;
+`
 const ButtonDiv = styled.div`
   display: flex;
   margin: 0 auto;
-  margin-top: 20px;
-  width: 20%;
+  width: 35%;
   justify-content: space-between;
-  padding: 0px;`
+  padding: 0px;
+  position: absolute;
+  margin-left: 550px;
+  padding-top: 20px;
+`
 
 class Dashboard extends Component {
 
@@ -54,8 +67,6 @@ class Dashboard extends Component {
     const topic = this.props.match.params.topic
     const pages = data.length - 1
     const p = data.length - 1
-
-    data[0].comments.push({"comment": "hello", "date": "12th", "user": "Leah"})
 
     if (topic === "Story") {
       this.setState({topic: "Story", data: data[pages].Story, pages, p})
@@ -95,10 +106,10 @@ class Dashboard extends Component {
       <div className="MainDashboard">
         <Nav/>
         <DashboardSideBar/>
-        <ButtonDiv>
-                  {(p > 0) ? <img src={LeftIcon} alt="LeftIcon" height={75} id="yesterday" onClick={(event) => this.handleClick(event)}></img> : <p></p>}
-                  {(p < pages) ? <img src={RightIcon} alt="RightIcon" height={75} id="next day" onClick={(event) => this.handleClick(event)}></img> : <p></p>}
-                  </ButtonDiv>
+              <ButtonDiv>
+                  {(p > 0) ? <PageButtonRight id="yesterday" onClick={(event) => this.handleClick(event)}>{this.getDate(pages - p)}</PageButtonRight> : <p></p>}
+                  {(p < pages) ? <PageButtonLeft id="next day" onClick={(event) => this.handleClick(event)}>{this.getDate(pages - (p + 2))}</PageButtonLeft> : <p></p>}
+              </ButtonDiv>
           <MainDiv> 
                 <Info data={this.state.data} topic={this.state.topic}/>
           </MainDiv>
