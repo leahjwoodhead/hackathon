@@ -36,6 +36,8 @@ h2 {
     animation-iteration-count: infinite;
     width: 650px;
     height: 140px;
+    border-radius: 25px;
+    border: 5px solid black;
 }
 
 h3, h4 {
@@ -43,10 +45,11 @@ h3, h4 {
     padding: 16px;
     font-size: 14px;
     margin-left: 75px;
-    margin-top:30px;
+    margin-top:20px;
     width: 620px;
     font-family: "Montserrat";
     text-align:justify;
     box-shadow: 10px 10px#E74A36;
+    border-radius: 25px;
+    border: 5px solid black;
 }
-

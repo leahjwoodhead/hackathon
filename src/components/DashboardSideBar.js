@@ -1,16 +1,19 @@
 import react, {Component} from "react";
 import styled, { withTheme } from 'styled-components'
 import { Link } from "react-router-dom"
+import StoryIcon from '../images/icons/story.png'
+import EventIcon from '../images/icons/event.png'
+import PodcastIcon from '../images/icons/podcast.png'
+import BookIcon from '../images/icons/book.png'
+import MusicIcon from '../images/icons/music.png'
 
 const MainDiv = styled.div`
   width: 10%;
-  height: 200px;
-  margin-left: 250px;
+  margin-left: 380px;
   position: absolute;
-  margin-top: 70px;
+  margin-top: 100px;
 `
 const List = styled.ul`
-    color: white;
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -21,9 +24,9 @@ const ListItem = styled.li`
 `
 
 const linkStyle = {
-    color: "white",
     "text-decoration": "none"
 }
+
 
 class DashboardSideBar extends Component {
 
@@ -33,19 +36,19 @@ class DashboardSideBar extends Component {
           <MainDiv> 
               <List>
                 <ListItem>
-                    <Link to="/Dashboard/Story" style={linkStyle}>Story</Link>
+                    <Link to="/Dashboard/Story" style={linkStyle}><img src={StoryIcon} alt="StoryIcon" height={75}/></Link>
                 </ListItem>
                 <ListItem>
-                    <Link to="/Dashboard/Event" style={linkStyle}>Event</Link>
+                    <Link to="/Dashboard/Event" style={linkStyle}><img src={EventIcon} alt="EventIcon" height={75}/></Link>
                 </ListItem>
                 <ListItem>
-                    <Link to="/Dashboard/Podcast" style={linkStyle}>Podcast</Link>
+                    <Link to="/Dashboard/Podcast" style={linkStyle}><img src={PodcastIcon} alt="PodcastIcon" height={75}/></Link>
                 </ListItem>
                 <ListItem>
-                    <Link to="/Dashboard/Book" style={linkStyle}>Book</Link>
+                    <Link to="/Dashboard/Book" style={linkStyle}><img src={BookIcon} alt="BookIcon" height={75}/></Link>
                 </ListItem>
                 <ListItem>
-                    <Link to="/Dashboard/Music" style={linkStyle}>Music</Link>
+                    <Link to="/Dashboard/Music" style={linkStyle}><img src={MusicIcon} alt="MusicIcon" height={75}/></Link>
                 </ListItem>
                 </List>  
           </MainDiv>

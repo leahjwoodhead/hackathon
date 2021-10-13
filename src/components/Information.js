@@ -1,20 +1,25 @@
 import React, { Component }  from "react";
 import styled from 'styled-components'
+import './styles/Information.css'
 
 const InfoDiv = styled.div`
     margin: 0px auto;
-    justify-content: center;
-    padding: 30;
     color: white;
     padding-bottom: 10px;
-    
+    background-color:  grey;
+    margin-top:20px;
+    width: 531px;
+    height: 440px; 
+    border-radius: 25px;
+    border: 5px solid black;
+    box-shadow: 10px 10px yellow;
 `
 
 class Info extends React.Component {
     render() { 
         return <div>
             <InfoDiv>
-                <h2>{this.props.topic}</h2>
+                <h5>{this.props.topic}</h5>
                 <p>{this.props.data.title ? this.props.data.title : null}</p>
                 <p>{this.props.data.text ? this.props.data.text : null}</p>
                 <p>{this.props.data.author ? this.props.data.author : null}</p>

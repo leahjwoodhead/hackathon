@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Nav from './Nav';
 import './styles/About.css'
-import logo from '../images/logo.png'
 
 function About() {
     return (
@@ -21,6 +20,5 @@ function About() {
         </div>
     );
 }
-
 
 export default About;
