@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&display=swap');
 
 .AboutPage{
-background: url("../../aboutpic.png") no-repeat;   
+background: url("../../images/aboutpic.png") no-repeat;   
 background-repeat:inherit;
 background-attachment: fixed;
 background-position: center; 

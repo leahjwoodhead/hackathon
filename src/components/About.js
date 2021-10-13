@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Nav from './Nav';
 import './styles/About.css'
-import logo from '../logo.png'
+import logo from '../images/logo.png'
 
 function About() {
     return (
