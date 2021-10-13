@@ -140,5 +140,33 @@ export const data = [
                 "year": "1900"
         }
     },
+    {
+        "Story":  { 
+                "text": "Gewartet ubrigens tur hindurch trostlos das erkannte gar wanderer. Hubschen streckte ri ei leichter arbeiter gespielt ab nachsten. Sa gutmutigen birkendose nachtessen verdrossen so sonderling du grasgarten. Kostet katzen ten mussen storen wirtin laufet gro ein. Dem gut sie fur alsbald lustige spatzen. Da im riefe karte es mu knulp notig.",
+                "author": "Myles"
+            },
+        "Event": {
+                "title": "Leeds LGBT+ Bookclub ",
+                "location": "Zoom",
+                "time": "First Wednesday of the Month 18:30",
+                "description": "The Leeds LGBT+ Bookclub meet once a month to discuss a wide range of books either written by LGBT+ authors or with LGBT+ themes.  It is a safe space and no-one will have to provide any information they do not want to.  ",
+                "link": "https://www.leedslgbtbooks.com/reading-list"
+        },
+        "Podcast": {
+                "title": "Queery",
+                "host": "Cameron Esposito",
+                "description": "The stand-up comedian and actor conducts hour-long, heartfelt conversations with diverse members of the LGBTQ community: Abby Wambach, SOAK, Our Lady J, and Bob the Drag Queen, just to name a few. Esposito doesn't shy away from wading into a guest's darker times—but she also uses warmth and wit to shine a light on queer folks' successes as well as their struggles."
+        },
+        "Book": {
+                "title": "Aristotle and Dante Discover the Secrets of the Universe",
+                "author": "Benjamin Alire Sáenz",
+                "description": "This Printz Honor Book is the story of a special friendship that changes lives and lasts a lifetime."
+        },
+        "Music": {
+                "title": "I Will Survive",
+                "artist": "Gloria Gaynor",
+                "year": "1978"
+        }
+    },
 ];
 
