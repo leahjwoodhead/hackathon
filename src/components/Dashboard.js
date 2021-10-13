@@ -54,6 +54,9 @@ class Dashboard extends Component {
     const topic = this.props.match.params.topic
     const pages = data.length - 1
     const p = data.length - 1
+
+    data[0].comments.push({"comment": "hello", "date": "12th", "user": "Leah"})
+
     if (topic === "Story") {
       this.setState({topic: "Story", data: data[pages].Story, pages, p})
     } else if (topic === "Podcast") {
@@ -74,6 +77,16 @@ class Dashboard extends Component {
       if (event.target.id === "next day") newState.p++
       return newState
     })
+  }
+
+
+  getDate(daysToSubtract){
+    let today = new Date();
+    const dd = String(today.getDate() - daysToSubtract).padStart(2, '0');
+    const mm = String(today.getMonth()).padStart(2, '0'); //January is 0!
+
+    today = dd + "/" + mm;
+    return today
   }
 
   render(){

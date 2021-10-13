@@ -2,7 +2,12 @@ export const data = [
     {
         "Story":  { 
                 "text": "Ei ku jawohl en mi fertig hangen konnen gesagt. Dazwischen nachmittag ein eigentlich ist sog tat. Was dazwischen launischen das vorsichtig       verrichtet eigentlich wie ein. Wahres gerber gro ehe tal kannst. Naturlich in da nachgehen schwachem gegriffen ja. Gearbeitet bugeleisen birkendose neidgefuhl die das dienstmagd.",
-                "author": "Leah"
+                "author": "Leah",
+                "comments": [{
+                        "commemt": "",
+                        "date": "",
+                        "user": ""
+                }]
             },
         "Event": {
                 "title": "LGBT+ Dog Walk",
