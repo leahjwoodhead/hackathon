@@ -18,7 +18,7 @@ const ButtonDiv = styled.div`
   display: flex;
   margin: 0 auto;
   margin-top: 20px;
-  width: 40%;
+  width: 20%;
   justify-content: space-between;
   padding: 0px;`
 
