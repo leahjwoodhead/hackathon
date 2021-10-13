@@ -84,5 +84,61 @@ export const data = [
                 "year": "2011"
         }
     },
+    {
+        "Story":  { 
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "author": "Leah"
+            },
+        "Event": {
+                "title": "Supporting LGBT+ older people",
+                "location": "LOPF Online, Leeds",
+                "time": "Thurs Dec 9th, 14:00",
+                "description": "Another in a series of monthly online events from Time to Shine, a session looking at the specific issues affecting LGBT+ older people.",
+                "link": "https://www.eventbrite.co.uk/e/supporting-lgbt-older-people-tickets-161601864527?aff=ebdssbdestsearch"
+        },
+        "Podcast": {
+                "title": "Las Culturistas",
+                "host": "Matt Rogers and Bowen Yang",
+                "description": "Do not eat or drink during this pop culture-obsessed show, because you will cackle-laugh. Saturday Night Live cast member Yang and Haute Dog host Rogers talk TV and pop music, tell their 'readers' about awkward run-ins during celeb interviews, and share stories from their friendship dating back to when they met at NYU. Don't miss each ep's 'I Don’t Think So Honey' segment, in which the hosts and their guests get one minute to talk about anything they loathe: going to bed without taking makeup off; Forrest Gump; restaurants that don't allow dogs; and actual honey."
+        },
+        "Book": {
+                "title": "Boy Erased",
+                "author": "Garrard Conleyn",
+                "description": "Through an institutionalized Twelve-Step Program, Garrad Conley was supposed to emerge heterosexual. Instead, even when faced with a harrowing and brutal journey, Garrard found the strength and understanding to break out in search of his true self and forgiveness."
+        },
+        "Music": {
+                "title": "I Want to Break Free",
+                "artist": "Queen",
+                "year": "1984"
+        }
+    },
+    {
+        "Story":  { 
+                "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+                "author": "Greta"
+            },
+        "Event": {
+                "title": "Simon on the Streets Wellbeing Class",
+                "location": "Hanover Square, Leeds",
+                "time": "Mon 1st Nev, 10:00-11:00",
+                "description": "'Simon on the Streets' & 'Danny Silk and Matt Walwyn Personal Training' are offering an opportunity for those less fortunate within Leeds a FREE fitness class once a month with support from the 'LGBT+ Sport Fringe Festival' and 'Leeds Outdoor Market Fruit and Veg Delivery'",
+                "link": "https://www.eventbrite.co.uk/e/simon-on-the-streets-wellbeing-class-tickets-158570954995"
+        },
+        "Podcast": {
+                "title": "Nancy",
+                "host": "Kathy Tu and Tobin Low",
+                "description": "The cheery co-hosts and BFFs make like Fresh Air's Terry Gross and hilariously, movingly interview everyone from Alexandra Billings to Masha Gessen. The show possesses This American Life vibes and shares surprising personal stories from allies and everyday queers—a United Methodist pastor whose coming out is at odds with her church; an older man who adopted his partner before same-sex marriage was legal—who aren't always passed the mainstream mic."
+        },
+        "Book": {
+                "title": "Tomorrow Will Be Different",
+                "author": "Sarah McBride",
+                "description": "Informative, heartbreaking, and profoundly empowering, Tomorrow Will Be Different is Sarah McBride’s story of love and loss and a powerful entry point into the LGBTQ community’s battle for equal rights and what it means to be openly transgender. McBride weaves the important political and cultural milestones into a personal journey that will open hearts and change minds.."
+        },
+        "Music": {
+                "title": "Freedom! ‘90",
+                "artist": "George Michael",
+                "year": "1900"
+        }
+    },
 ];
 
