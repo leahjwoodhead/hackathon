@@ -1,0 +1,18 @@
+h5 {
+    padding-left:170px;
+    padding-top: 0;
+    margin-top:0;
+    font-family: 'Permanent Marker';
+    font-size: 70px;
+    background-color: #E7E736;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    width: 346px;
+    height: 110px;  
+}
+
+a {
+    font-family: "Montserrat"; 
+    text-align:justify;
+    color: #E74A36;
+}

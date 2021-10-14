@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&display=swap');
+
+.MainDashboard {
+background: url("../../images/dashboard.png") no-repeat;   
+background-repeat:inherit;
+background-attachment: fixed;
+background-position: center; 
+background-size:cover;
+position: fixed;    
+top: 0;   
+left: 0;    
+right: 0;   
+bottom: 0;   
+min-width: 100%;  
+min-height: 100%; 
+overflow: scroll;
+}
+
+h5 {
+border-bottom: 5px solid black;
+border-radius: 25px;
+padding-right: 16px;
+font-family: 'Permanent Marker';
+font-size: 60px;
+color: black;
+background-color: #E7E736;
+animation-name: example;
+animation-duration: 7s;
+animation-iteration-count: infinite;
+width: 500px;
+height: 90px;
+}
+
+p{
+font-family: "Montserrat"; 
+text-align:justify;
+color: black;
+font-weight: bold;
+}
+
+input {
+  background-color: yellow;
+  color: black;
+  padding: 10px;
+  border-radius: 25px;
+  border-radius: 25px;
+  border: 3px solid black; 
+  font-family: "Montserrat";
+  font-weight: bold;
+}

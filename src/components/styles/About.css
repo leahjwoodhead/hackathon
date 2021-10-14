@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&display=swap');
+
+.AboutPage {
+    background: url("../../images/aboutpic.png") no-repeat;   
+    background-repeat:inherit;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size:cover;
+    position: fixed;    
+    top: 0;   
+    left: 0;    
+    right: 0;   
+    bottom: 0;   
+    min-width: 100%;  
+    min-height: 100%; 
+}
+
+@keyframes example {
+    0%   {background-color: #E74A36;}
+    25%  {background-color: #E7E736;} 
+    50%  {background-color: orange;}
+    100% {background-color: greenyellow;}
+  }
+
+h2 {
+    display: flex;
+    margin-left: 5%;
+    padding-left:16px;
+    padding-top: 0;
+    font-family: 'Permanent Marker';
+    font-size: 85px;
+    background-color: #E7E736;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    width: 45%;
+    height: 18%;
+    border-radius: 25px;
+    border: 5px solid black;
+}
+
+h3 {
+    background-color: grey;
+    padding: 16px;
+    font-size: 14px;
+    margin-left: 5%;
+    width: 40%;
+    height: 150px;
+    font-family: "Montserrat";
+    text-align:justify;
+    box-shadow: 10px 10px#E74A36;
+    border-radius: 25px;
+    border: 5px solid black; 
+}
+
+
+h4 {
+    background-color: grey;
+    padding: 16px;
+    font-size: 14px;
+    margin-left: 5%;
+    margin-top:20px;
+    width: 40%;
+    font-family: "Montserrat";
+    text-align:justify;
+    box-shadow: 10px 10px#E74A36;
+    border-radius: 25px;
+    border: 5px solid black;
+}

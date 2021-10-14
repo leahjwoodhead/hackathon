@@ -1,12 +1,15 @@
-import './App.css';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from "./Routes";
+import history from './history';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       <h1>Hackathon!</h1>
-      </header>
-    </div>
+    <BrowserRouter history={history}>
+      <div className="App">   </div>
+        <Routes />
+  
+    </BrowserRouter>
   );
 }
 
