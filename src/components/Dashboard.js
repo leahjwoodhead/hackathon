@@ -21,35 +21,6 @@ const CommentsDiv = styled.div`
   flex-direction: column;
   margin-top: 300px;
 `
-
-const InfoDiv = styled.div`
-    width: 500px;
-    font-size: 10px;
-    margin: 0 auto;
-    height: 40px;
-    margin-top: 10px;
-    border: 1px solid white;
-    color: white;
-    font-size: 10px;
-    margin: 0 auto;
-    margin: 0px auto;
-    color: white;
-    background-color:  grey;
-    width: 531px;
-    height: 70px; 
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 25px;
-    box-shadow: 3px 5px#E74A36;
-    border-bottom: 3px solid black;
-    border-top: 3px solid black;
-    border-right: 3px solid black;
-    border-left: 3px solid black;
-`
-
-const Form = styled.form`
-`
-
 const InputComment = styled.input`
   width: 97%;
   padding: 5px;
