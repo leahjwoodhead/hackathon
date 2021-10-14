@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import history from "../history"
 import styled from 'styled-components'
 import logo from '../images/logo.png'
 import '../components/styles/LandingPage.css'
 import { Link } from "react-router-dom"
+import './styles/Nav.css'
 
 const NavBar = styled.nav`
     margin: 0 auto;
@@ -12,8 +12,7 @@ const NavBar = styled.nav`
     justify-content: space-evenly;
     grid-area: nav;
     padding-top: 20px;
-    margin-right: 800px;
-
+    margin: auto;
 `
 
 const NavButton = styled.button`
@@ -29,9 +28,10 @@ const NavButton = styled.button`
 `
 
 const linkStyle = {
-    color: "white",
+    "color": "white",
     "text-decoration": "none",
-    "margin-top": "20px"
+    "margin-top": "20px",
+    "font-size": "20px"
 }
 
 class Nav extends Component {
@@ -44,9 +44,9 @@ class Nav extends Component {
             <div>
                 <NavBar>
 
-                        <Link to="/Dashboard/Story" style={linkStyle}>DISCOVER</Link>
+                        <Link to="/Dashboard/Story" className="NavStyle" style={linkStyle}>DISCOVER</Link>
                         <img className="Logo-container" src={logo} alt="Logo" height={75}/>
-                        <Link to="/About" style={linkStyle}> ABOUT</Link>
+                        <Link to="/About" className="NavStyle" style={linkStyle}> ABOUT</Link>
                 </NavBar>
             </div>
         )

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&display=swap');
+
 .App{
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -70,9 +72,15 @@
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 1px 7px 2px;
+    border-radius: 25px;
+    border: 2px solid white;
   }
   
   .Button-Group {
     display:flex;
   }
   
+  h1{
+    font-family: 'Permanent Marker';
+    font-size: 60px;
+  }

@@ -1,0 +1,7 @@
+.NavStyle {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    color: white;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+}
