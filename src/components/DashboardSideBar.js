@@ -9,7 +9,7 @@ import MusicIcon from '../images/icons/music.png'
 
 const MainDiv = styled.div`
   width: 10%;
-  margin-left: 350px;
+  margin-left: 22%;
   position: absolute;
   margin-top: 80px;
 `

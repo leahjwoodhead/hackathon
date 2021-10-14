@@ -67,7 +67,7 @@ const ButtonDiv = styled.div`
   justify-content: space-between;
   padding: 0px;
   position: absolute;
-  margin-left: 550px;
+  margin-left: 38%;
   padding-top: 20px;
 `
 
