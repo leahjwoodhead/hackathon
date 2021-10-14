@@ -132,7 +132,17 @@ class Dashboard extends Component {
           <MainDiv> 
                 <Info data={this.state.data} topic={this.state.topic}/>
           </MainDiv>
-
+          <CommentsDiv>
+            {(this.state.data && (this.state.data.comments.length > 0)) ? this.state.data.comments.map(comment => {
+              return <Comments comment={comment}/>
+            }) : <p>This article does not have any comments</p>}
+              <InfoDiv>
+                <Form>
+                  <InputComment  type="text"placeholder="Add Comment..."></InputComment >
+                  <input type="submit"></input>
+                </Form>
+              </InfoDiv>
+          </CommentsDiv>
       </div>
     );
   }
