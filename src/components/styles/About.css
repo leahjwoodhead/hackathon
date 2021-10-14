@@ -24,7 +24,7 @@
 
 h2 {
     display: flex;
-    margin-left: 75px;
+    margin-left: 5%;
     padding-left:16px;
     padding-top: 0;
     font-family: 'Permanent Marker';
@@ -33,8 +33,8 @@ h2 {
     animation-name: example;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    width: 650px;
-    height: 130px;
+    width: 45%;
+    height: 18%;
     border-radius: 25px;
     border: 5px solid black;
 }
@@ -43,8 +43,8 @@ h3 {
     background-color: grey;
     padding: 16px;
     font-size: 14px;
-    margin-left: 75px;
-    width: 620px;
+    margin-left: 5%;
+    width: 40%;
     height: 150px;
     font-family: "Montserrat";
     text-align:justify;
@@ -58,9 +58,9 @@ h4 {
     background-color: grey;
     padding: 16px;
     font-size: 14px;
-    margin-left: 75px;
+    margin-left: 5%;
     margin-top:20px;
-    width: 620px;
+    width: 40%;
     font-family: "Montserrat";
     text-align:justify;
     box-shadow: 10px 10px#E74A36;

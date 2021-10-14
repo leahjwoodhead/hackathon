@@ -37,3 +37,13 @@ text-align:justify;
 color: black;
 font-weight: bold;
 }
+
+input {
+  background-color: yellow;
+  color: black;
+  border-radius: 25px;
+  border-radius: 25px;
+  border: 3px solid black; 
+  font-family: "Montserrat";
+  font-weight: bold;
+}

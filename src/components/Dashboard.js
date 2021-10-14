@@ -5,26 +5,15 @@ import DashboardSideBar from './DashboardSideBar';
 import { data } from '../data/data'
 import './styles/Dashboard.css'
 import Info from './Information';
-import Comments from './Comments'
 import LeftIcon from '../images/icons/left.png'
 import RightIcon from '../images/icons/right.png'
 import CommentSubmission from './CommentSubmission'
-
+import Comments from './Comments'
 
 const MainDiv = styled.div`
   margin: 30px auto;
   width: 50%;
   height: 200px;
-`
-const ButtonDiv = styled.div`
-  display: flex;
-  margin: 0 auto;
-  width: 28.5%;
-  justify-content: space-between;
-  padding: 0px;
-  position: absolute;
-  margin-left: 550px;
-  padding-top: 20px;
 `
 
 const CommentsDiv = styled.div`
@@ -34,22 +23,53 @@ const CommentsDiv = styled.div`
 `
 
 const InfoDiv = styled.div`
-    border: 1px solid white;
     width: 500px;
-    color: white;
     font-size: 10px;
     margin: 0 auto;
     height: 40px;
     margin-top: 10px;
+    border: 1px solid white;
+    color: white;
+    font-size: 10px;
+    margin: 0 auto;
+    margin: 0px auto;
+    color: white;
+    background-color:  grey;
+    width: 531px;
+    height: 70px; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    box-shadow: 3px 5px#E74A36;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
 `
 
 const Form = styled.form`
-  display: flex;
-  padding: 5px;
 `
 
 const InputComment = styled.input`
-  width: 90%;
+  width: 97%;
+  padding: 5px;
+  margin-bottom:5px;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+  border-radius: 25px;
+`
+
+const ButtonDiv = styled.div`
+  display: flex;
+  margin: 0 auto;
+  width: 28.5%;
+  justify-content: space-between;
+  padding: 0px;
+  position: absolute;
+  margin-left: 38%;
+  padding-top: 20px;
 `
 
 class Dashboard extends Component {
