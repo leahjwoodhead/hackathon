@@ -88,15 +88,15 @@ class Dashboard extends Component {
 
     if (prevProps !== this.props  || prevState.p !== p) {
       if (topic === "Story") {
-        this.setState({topic: "Story", data: data[p].Story})
+        this.setState({topic: "Story", data: data[p].Story, comments: data[p].Story.comments})
       } else if (topic === "Podcast") {
-        this.setState({topic: "Podcast", data: data[p].Podcast})
+        this.setState({topic: "Podcast", data: data[p].Podcast, comments: data[p].Podcast.comments})
       } else if (topic === "Book") {
-        this.setState({topic: "Book", data: data[p].Book})
+        this.setState({topic: "Book", data: data[p].Book, comments: data[p].Book.comments})
       } else if (topic === "Music") {
-        this.setState({topic: "Music", data: data[p].Music})
+        this.setState({topic: "Music", data: data[p].Music, comments: data[p].Music.comments})
       } else if (topic === "Event") {
-        this.setState({topic: "Event", data: data[p].Event})
+        this.setState({topic: "Event", data: data[p].Event, comments: data[p].Event.comments})
       }
     }
 
