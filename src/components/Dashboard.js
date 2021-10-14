@@ -8,6 +8,7 @@ import Info from './Information';
 import Comments from './Comments'
 import LeftIcon from '../images/icons/left.png'
 import RightIcon from '../images/icons/right.png'
+import CommentSubmission from './CommentSubmission'
 
 
 const MainDiv = styled.div`
@@ -57,7 +58,8 @@ class Dashboard extends Component {
     topic: "",
     data: "",
     pages: 1,
-    p: 1
+    p: 1,
+    comments: []
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -85,16 +87,17 @@ class Dashboard extends Component {
     const pages = data.length - 1
     const p = data.length - 1
 
+
     if (topic === "Story") {
-      this.setState({topic: "Story", data: data[pages].Story, pages, p})
+      this.setState({topic: "Story", data: data[pages].Story, pages, p, comments: data[pages].Story.comments})
     } else if (topic === "Podcast") {
-      this.setState({topic: "Podcast", data: data[pages].Podcast, pages, p})
+      this.setState({topic: "Podcast", data: data[pages].Podcast, pages, p, comments: data[pages].Podcast.comments})
     } else if (topic === "Book") {
-      this.setState({topic: "Book", data: data[pages].Book, pages, p})
+      this.setState({topic: "Book", data: data[pages].Book, pages, p, comments: data[pages].Book.comments})
     } else if (topic === "Music") {
-      this.setState({topic: "Music", data: data[pages].Music, pages, p})
+      this.setState({topic: "Music", data: data[pages].Music, pages, p, comments: data[pages].Music.comments})
     } else if (topic === "Event") {
-      this.setState({topic: "Event", data: data[pages].Event, pages, p})
+      this.setState({topic: "Event", data: data[pages].Event, pages, p, comments: data[pages].Event.comments})
     }
   }
 
@@ -117,6 +120,15 @@ class Dashboard extends Component {
     return today
   }
 
+
+  handleSubmission = (comment) => {
+    this.setState(currState => {
+      const newState = {comments: [comment, ...currState.comments]}
+      return newState
+    })
+  }
+
+
   render(){
     const {pages, p, topic} = this.state
     return (
@@ -133,15 +145,10 @@ class Dashboard extends Component {
                 <Info data={this.state.data} topic={this.state.topic}/>
           </MainDiv>
           <CommentsDiv>
-            {(this.state.data && (this.state.data.comments.length > 0)) ? this.state.data.comments.map(comment => {
+            {(this.state.data && (this.state.comments.length > 0)) ? this.state.comments.map(comment => {
               return <Comments comment={comment}/>
             }) : <p>This article does not have any comments</p>}
-              <InfoDiv>
-                <Form>
-                  <InputComment  type="text"placeholder="Add Comment..."></InputComment >
-                  <input type="submit"></input>
-                </Form>
-              </InfoDiv>
+            <CommentSubmission handleSubmission={this.handleSubmission}/>
           </CommentsDiv>
       </div>
     );

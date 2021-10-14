@@ -28,7 +28,6 @@ class Info extends React.Component {
     render() { 
         return <div>
             <InfoDiv>
-                {console.log(this.props.comment)}
                 <p>{this.props.comment.comment}</p>
                 <p>{this.props.comment.date}</p>
                 <p>{this.props.comment.user}</p>
