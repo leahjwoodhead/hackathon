@@ -50,7 +50,14 @@ const Form = styled.form`
 `
 
 const InputComment = styled.input`
-  width: 90%;
+  width: 97%;
+  padding: 5px;
+  margin-bottom:5px;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+  border-radius: 25px;
 `
 
 const ButtonDiv = styled.div`
