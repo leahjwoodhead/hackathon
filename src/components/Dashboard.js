@@ -22,9 +22,7 @@ const CommentsDiv = styled.div`
 `
 
 const InfoDiv = styled.div`
-    border: 1px solid white;
     width: 500px;
-    color: white;
     font-size: 10px;
     margin: 0 auto;
     height: 40px;
@@ -32,8 +30,6 @@ const InfoDiv = styled.div`
 `
 
 const Form = styled.form`
-  display: flex;
-  padding: 5px;
 `
 
 const InputComment = styled.input`
