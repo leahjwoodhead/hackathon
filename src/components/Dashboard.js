@@ -5,25 +5,14 @@ import DashboardSideBar from './DashboardSideBar';
 import { data } from '../data/data'
 import './styles/Dashboard.css'
 import Info from './Information';
-import Comments from './Comments'
 import LeftIcon from '../images/icons/left.png'
 import RightIcon from '../images/icons/right.png'
-
+import Comments from './Comments'
 
 const MainDiv = styled.div`
   margin: 30px auto;
   width: 50%;
   height: 200px;
-`
-const ButtonDiv = styled.div`
-  display: flex;
-  margin: 0 auto;
-  width: 28.5%;
-  justify-content: space-between;
-  padding: 0px;
-  position: absolute;
-  margin-left: 550px;
-  padding-top: 20px;
 `
 
 const CommentsDiv = styled.div`
@@ -49,6 +38,17 @@ const Form = styled.form`
 
 const InputComment = styled.input`
   width: 90%;
+`
+
+const ButtonDiv = styled.div`
+  display: flex;
+  margin: 0 auto;
+  width: 28.5%;
+  justify-content: space-between;
+  padding: 0px;
+  position: absolute;
+  margin-left: 550px;
+  padding-top: 20px;
 `
 
 class Dashboard extends Component {
