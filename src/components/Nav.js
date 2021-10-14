@@ -13,8 +13,6 @@ const NavBar = styled.nav`
     grid-area: nav;
     padding-top: 20px;
     margin: auto;
-
-
 `
 
 const NavButton = styled.button`
