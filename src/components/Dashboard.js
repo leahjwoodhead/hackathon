@@ -125,7 +125,9 @@ class Dashboard extends Component {
         <DashboardSideBar/>
         <ButtonDiv>
                   {(p > 0) ? <img src={LeftIcon} alt="LeftIcon" height={75} id="yesterday" onClick={(event) => this.handleClick(event)}></img> : <p></p>}
+                  {(p > 0) ? <p>{this.getDate(pages - p)}</p> : <p></p>}
                   {(p < pages) ? <img src={RightIcon} alt="RightIcon" height={75} id="next day" onClick={(event) => this.handleClick(event)}></img> : <p></p>}
+                  {(p < pages) ? <p>{this.getDate(pages - (p + 2))}</p> : <p></p>}
                   </ButtonDiv>
           <MainDiv> 
                 <Info data={this.state.data} topic={this.state.topic}/>
