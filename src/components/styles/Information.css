@@ -11,7 +11,9 @@ h5 {
     height: 110px;  
 }
 
-p{
-    padding-left: 10px;
-    padding-right:10px;
+a {
+    font-family: "Montserrat"; 
+    text-align:justify;
+    color: #E74A36;
+    font-weight: bold;
 }

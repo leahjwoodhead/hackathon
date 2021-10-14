@@ -18,11 +18,17 @@ const InfoDiv = styled.div`
     margin-top:110px;
 `
 
+const InfoContent = styled.div `
+    padding-left: 10px;
+    padding-right:10px;
+    margin-top: -70px;
+`
 class Info extends React.Component {
     render() { 
         return <div>
             <InfoDiv>
                 <h5>{this.props.topic}</h5>
+                <InfoContent>
                 <p>{this.props.data.title ? this.props.data.title : null}</p>
                 <p>{this.props.data.text ? this.props.data.text : null}</p>
                 <p>{this.props.data.author ? this.props.data.author : null}</p>
@@ -33,6 +39,7 @@ class Info extends React.Component {
                 <p>{this.props.data.location ? this.props.data.location : null}</p>
                 <p>{this.props.data.time ? this.props.data.time : null}</p>
                 <a href={this.props.data.link}>{this.props.data.link ? "Click here for more info" : null}</a>
+                </InfoContent>
             </InfoDiv>
         </div>;
     }
