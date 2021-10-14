@@ -5,8 +5,10 @@ import DashboardSideBar from './DashboardSideBar';
 import { data } from '../data/data'
 import './styles/Dashboard.css'
 import Info from './Information';
+import Comments from './Comments'
 import LeftIcon from '../images/icons/left.png'
 import RightIcon from '../images/icons/right.png'
+
 
 const MainDiv = styled.div`
   margin: 30px auto;
@@ -22,6 +24,31 @@ const ButtonDiv = styled.div`
   position: absolute;
   margin-left: 550px;
   padding-top: 20px;
+`
+
+const CommentsDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 300px;
+`
+
+const InfoDiv = styled.div`
+    border: 1px solid white;
+    width: 500px;
+    color: white;
+    font-size: 10px;
+    margin: 0 auto;
+    height: 40px;
+    margin-top: 10px;
+`
+
+const Form = styled.form`
+  display: flex;
+  padding: 5px;
+`
+
+const InputComment = styled.input`
+  width: 90%;
 `
 
 class Dashboard extends Component {
@@ -91,7 +118,7 @@ class Dashboard extends Component {
   }
 
   render(){
-    const {pages, p} = this.state
+    const {pages, p, topic} = this.state
     return (
       <div className="MainDashboard">
         <Nav/>
@@ -103,6 +130,17 @@ class Dashboard extends Component {
           <MainDiv> 
                 <Info data={this.state.data} topic={this.state.topic}/>
           </MainDiv>
+          <CommentsDiv>
+            {(this.state.data && (this.state.data.comments.length > 0)) ? this.state.data.comments.map(comment => {
+              return <Comments comment={comment}/>
+            }) : <p>This article does not have any comments</p>}
+              <InfoDiv>
+                <Form>
+                  <InputComment  type="text"placeholder="Add Comment..."></InputComment >
+                  <input type="submit"></input>
+                </Form>
+              </InfoDiv>
+          </CommentsDiv>
       </div>
     );
   }
