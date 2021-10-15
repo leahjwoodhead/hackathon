@@ -45,7 +45,7 @@ class Nav extends Component {
                 <NavBar>
 
                         <Link to="/Dashboard/Story" className="NavStyle" style={linkStyle}>DISCOVER</Link>
-                        <img className="Logo-container" src={logo} alt="Logo" height={75}/>
+                       <Link to="/"> <img className="Logo-container" src={logo} alt="Logo" height={75}/> </Link>
                         <Link to="/About" className="NavStyle" style={linkStyle}> ABOUT</Link>
                 </NavBar>
             </div>
