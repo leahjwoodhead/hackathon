@@ -1,3 +1,9 @@
+Our idea for the LGBTQ+ hackathon was to create a daily information hub wherein people can read inspirational stories from others within in the community and receive suggestions for LGBTQ+ inclusive content such as events, books, podcasts and even a daily song suggestion.
+Each day, a new set of information will display on the website, so there is always something new to learn. The main idea was to have a story a day from someone within the LGBTQ+ community, perhaps describing their coming out story or any experiences they may have had that could help someone else.
+We also decided to add additional sections, such as events in Leeds that are LGBTQ+ inclusive, to enable people to connect with others while exploring new hobbies. The comment section further allows people to discuss the content, meet new people, and create a sense of community.
+This idea has endless possibilities. With more time, more categories could be added and additional user sign in functionality can be added so people can have profiles, chat with others and submit their own suggestions for content.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
