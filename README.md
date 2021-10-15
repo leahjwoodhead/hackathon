@@ -38,9 +38,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-# Docker run
+## Docker run
 We have created a docker container to be able to use docker to run the application for ease of use.
 
+```bash
 FROM node
 ENV PORT=80
 RUN cd /opt && git clone https://github.com/leahjwoodhead/hackathon.git
@@ -48,12 +49,17 @@ WORKDIR /opt/hackathon
 RUN npm install --prefer-offline --no-audit
 CMD ["npm", "start"]
 EXPOSE 80
-how do you run it?
+```
+
+
+#### How do you run it?
 You will need to build the Dockerfile in the project directory.
 
+```bash
 docker build -t lgbtq/daily .
+```
 Once built, you can run the image:
-
+```BASH
 docker run \
 -dit \
 --name test1 \
@@ -61,9 +67,12 @@ docker run \
 --env "VIRTUAL_HOST=lgbtqdaily.techawareprojects.co.uk" \
 --env "VIRTUAL_PORT=80" \
 lgbtq/daily
+```
+
 Eventually once we're happy with this project, we will put this container on dockerhub to pull from instead.
 
-Future database configurations
+
+### Future database configurations
 As we don't have a database or api server set up currently. Here is a diagram on how we can connect our REACT app to the database. Ideally we would like to have a API server to interact with the database to concurrent requests and scalability.
 
 ![Database](https://user-images.githubusercontent.com/71640543/137460414-fa5c671f-cd48-4453-a667-0b501ffb2134.png)
