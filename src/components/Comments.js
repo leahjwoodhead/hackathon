@@ -1,6 +1,5 @@
 import React, { Component }  from "react";
 import styled from 'styled-components'
-import './styles/Comments.css'
 
 const InfoDiv = styled.div`
     border: 1px solid white;
