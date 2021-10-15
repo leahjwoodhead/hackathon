@@ -27,8 +27,8 @@ background-color: #E7E736;
 animation-name: example;
 animation-duration: 7s;
 animation-iteration-count: infinite;
-width: 500px;
-height: 90px;
+width: 50%;
+height: 10%;
 }
 
 p{

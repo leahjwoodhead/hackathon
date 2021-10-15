@@ -42,10 +42,10 @@ h2 {
 h3 {
     background-color: grey;
     padding: 16px;
-    font-size: 14px;
+    font-size: 15px;
     margin-left: 5%;
     width: 40%;
-    height: 150px;
+    height: 20%;
     font-family: "Montserrat";
     text-align:justify;
     box-shadow: 10px 10px#E74A36;
@@ -57,7 +57,7 @@ h3 {
 h4 {
     background-color: grey;
     padding: 16px;
-    font-size: 14px;
+    font-size: 15px;
     margin-left: 5%;
     margin-top:20px;
     width: 40%;
